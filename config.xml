@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns       = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.sanctusmedia.mobile.employeedirectory"
+        versionCode = "10"
+        version     = "1.1.11.5">
+ 
+    <name>Sanctuary First</name>
+ 
+    <description>
+        Sanctuary First mobile App - a place to be
+    </description>
+ 
+    <author href="http://www.sanctusmedia.com" email="neil@sanctusmedia.com">
+		Neil MacLennan
+    </author>
+ 
+	<gap:platform name="ios" /> <!-- IOS only for the time being -->
+	
+	<preference name="orientation" value="portrait" />
+	<preference name="detect-data-types" value="false" />
+	<access origin="http://sanctuaryfirst.org.uk" subdomains="true" />
+ 
+	 <feature name="debug-server" required="true">
+	   <param name="domain" value="http://debug.build.phonegap.com"/>
+	   <param name="key" value="uk.org.sanctuaryfirst.app2"/>
+	</feature>
+    <feature name="http://api.phonegap.com/1.0/camera"/>
+    <feature name="http://api.phonegap.com/1.0/contacts"/>
+    <feature name="http://api.phonegap.com/1.0/geolocation"/>
+    <feature name="http://api.phonegap.com/1.0/network"/>
+    <feature name="http://api.phonegap.com/1.0/notification"/>
+	
+	<preference name="StatusBarOverlaysWebView" value="true" />
+	<preference name="StatusBarBackgroundColor" value="#333333" />
+
+	<plugin name="cordova-plugin-statusbar" spec="2.0.0" source="npm" />
+
+	<platform name="ios">
+	    <!-- images are determined by width and height. The following are supported -->
+	    <splash src="img/screen/ios/Default~iphone.png" width="320" height="480"/>
+	    <splash src="img/screen/ios/Default@2x~iphone.png" width="640" height="960"/>
+<!-- 	    <splash src="img/screen/ios/Default-568h@2x~iphone.png" width="640" height="1136"/> -->
+	    <splash src="img/screen/ios/Default-667h.png" width="750" height="1334"/>
+<!-- 	    <splash src="img/screen/ios/Default-736h.png" width="1242" height="2208"/> -->
+<!-- 	    <splash src="img/screen/ios/Default-Landscape-736h.png" width="2208" height="1242"/> -->
+	</platform>
+ 
+</widget>
