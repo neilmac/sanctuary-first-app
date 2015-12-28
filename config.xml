@@ -31,7 +31,7 @@
     <feature name="http://api.phonegap.com/1.0/network"/>
     <feature name="http://api.phonegap.com/1.0/notification"/>
 	
-	<preference name="StatusBarOverlaysWebView" value="true" />
+	<preference name="StatusBarOverlaysWebView" value="false" />
 	<preference name="StatusBarBackgroundColor" value="#333333" />
 	
 	<preference name="SplashScreen" value="img/screen/ios/Default-667h.png" />
@@ -39,6 +39,7 @@
 	<preference name="SplashScreenDelay" value="3000" />
 	<preference name="SplashScreen" value="resourcename" />
 	<preference name="FadeSplashScreen" value="true"/> <!-- IOS only -->
+	<preference name="FadeSplashScreenDuration" value="1000"/> <!-- IOS only -->
 
 	<plugin name="cordova-plugin-splashscreen" spec="3.0.0" source="npm" />
 	<plugin name="cordova-plugin-statusbar" spec="2.0.0" source="npm" />

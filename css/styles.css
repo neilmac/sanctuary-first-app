@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    font-family: source-sans-pro, serif;
+/*     font-family: source-sans-pro, serif; */
     font-size: 16px;
     margin: 0;
     padding: 0;
@@ -14,7 +14,7 @@ body {
 }
 
 .header {
-    background: #666;
+    background: #688;
     -webkit-background-size: 1px 44px;
     -moz-background-size: 1px 44px;
     -ms-background-size: 1px 44px;
